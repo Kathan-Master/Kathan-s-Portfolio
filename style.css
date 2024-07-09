@@ -370,15 +370,15 @@ footer p {
     }
 }
 
-/* .main-content {
+.main-content-blog {
     max-width: 12000px;
     margin: 10px auto;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 2px solid #3498db;
     border-radius: 10px;
-
-} */
+    align-items: center;
+}
 
 .blog-section {
     display: grid;
