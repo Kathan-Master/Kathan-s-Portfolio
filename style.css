@@ -23,14 +23,15 @@ header {
 }
 
 header nav a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
 }
 
 header nav a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    color:#34a4ee;
 }
 
 h1, h2 {
