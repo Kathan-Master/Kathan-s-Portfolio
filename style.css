@@ -11,19 +11,27 @@ body {
     min-height: 100vh;
     /* background-color: #f0f0f0; */
     text-align: center;
-    background-image: url(Untitled\ design.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;
+    /* background-image: url(Circuit_Board_Background_oMXdaALcpew_137.mp4); */
+    /* background-repeat:no-repeat;
+    background-size: cover; */
 }
-
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    }
 header {
     /* background-color: #000000; */
     padding: 10px 0;
-    color: white;
+    color:#00ff55;
 }
 
 header nav a {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -31,11 +39,17 @@ header nav a {
 
 header nav a:hover {
     /* text-decoration: underline; */
-    color:#34a4ee;
+    color:#00ff55;
 }
 
-h1, h2 {
+h1{
     margin: 10px 0;
+    color: #ffaa00;
+} 
+
+h2 {
+    margin: 10px 0;
+    color: #fbff00;
 }
 
 main {
@@ -57,11 +71,11 @@ main {
 }
 
 #box {
-    border: 2px solid #3498db;
+    border: 2px solid #fbff00;
     border-radius: 10px;
     padding: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.434);
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
     margin-right: 20px;
     flex: 1;
     max-width: 400px;
@@ -74,7 +88,7 @@ main {
     height: 200px;
     overflow: hidden;
     border-radius: 50%;
-    border: 5px solid #34a4ee;
+    border: 5px solid #0044ff;
     margin: 20px 0;
 }
 
@@ -90,19 +104,32 @@ main {
 
 .info p {
     font-size: 16px;
-    color: #333;
+    color: #0044ff;
     margin: 5px 0;
+    font-style: oblique;
 }
 
 .info a {
-    color: #208cd4;
+    color: #fcfdfc;
     text-decoration: none;
 }
 
 .info a:hover {
     text-decoration: underline;
+    color: #00ddff;
 }
 
+.details {
+    flex: 2;
+    }
+
+    .details h2 {
+    margin: 0 0 10px;
+    }
+
+    .details p {
+    margin: 10px 0;
+    }
 .buttons {
     margin-top: 20px;
     display: flex;
@@ -110,18 +137,20 @@ main {
 }
 
 .btn {
-    background-color: #10202b;
-    color: white;
+    background-color: #fbff00;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 25px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
+    font-style: italic;
+
 }
 
 .btn:hover {
-    background-color: #2980b9;
+    background-color: #ffaa00;
     transform: scale(1.05);
 }
 
@@ -136,7 +165,7 @@ main {
 }
 
 .btn a {
-    color: white;
+    color: rgb(1, 1, 1);
     text-decoration: none;
 }
 
@@ -148,10 +177,10 @@ main {
     flex: 2;
     max-width: 600px;
     padding: 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.434);;
     border: 2px solid #3498db;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
 }
 
 .about-section h1, .about-section h2 {
